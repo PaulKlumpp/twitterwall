@@ -4,10 +4,11 @@ var ngTimeRelative = require('ng-time-relative')
 var moment = require('ng-time-relative/node_modules/moment')
 require('angular-sanitize')
 require('angular-animate')
+require('angular-scroll')
 
 var lib = require('./lib')
 
-var app = angular.module('twitterwall', ['ngSanitize', 'ngAnimate'])
+var app = angular.module('twitterwall', ['ngSanitize', 'ngAnimate', 'duScroll'])
   .constant('socket', io())
   .constant('moment', moment)
   .config(function ($sceDelegateProvider) {

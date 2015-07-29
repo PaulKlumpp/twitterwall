@@ -112,7 +112,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .general, .sponsor {
-  height: 20%;
+  height: 10%;
   display: flex;
   align-items: center;
   background-color: white;
@@ -121,9 +121,32 @@ a, a:hover, a:visited, a:active {
 .general {
   h1 {
     margin: 0 auto;
-    padding: 40px 0;
+    padding: 20px 0;
   }
 
+}
+
+.leftmiddle {
+  overflow-x: hidden;
+  overflow-y: overlay;
+
+  height: 80%;
+  background-color: fade(#333333, 80%);
+  display: flex;
+
+  h2 {
+    font-size: 42px;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: normal;
+  }
+
+  > div {
+    margin: 0 auto;
+    padding: 20px;
+  }
 }
 
 .sponsor {
@@ -140,8 +163,6 @@ a, a:hover, a:visited, a:active {
 }
 
 .nextup {
-  height: 60%;
-  padding: 20px;
   background-color: fade(#333333, 80%);
   display: flex;
   text-align: center;
@@ -199,7 +220,7 @@ tweet {
 
   .screenname {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 26px;
   }
 
   .text {
@@ -215,7 +236,9 @@ tweet {
   .media-img {
     margin: 20px 0;
     display: block;
-    width: 100%;
+    width: 50%;
+    position: relative;
+    left: 25%;
   }
 
   .user-img {

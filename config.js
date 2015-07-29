@@ -31,6 +31,25 @@ module.exports = {
       'Lounge': '#c35a18'
     }
   },
+  cineprog: {
+      sites: [{
+        url: 'http://www.kurbel-karlsruhe.de/index.php?knr=197&show=week&week=0&firstday=do',
+        snatchElement: 'div.film_box', // class "film_box"
+        duration: 20000
+      }, {
+        url: 'http://www.kurbel-karlsruhe.de/index.php?knr=197&show=week&week=1&firstday=do',
+        snatchElement: 'div.film_box', // class "film_box"
+        duration: 20000
+      }, {
+        url: 'http://www.kurbel-karlsruhe.de/index.php?targetkino=staticseite&US=3338',
+        snatchElement: 'div#content_box', // div with id 'content_box'
+        duration: 20000
+      }, {
+        url: 'http://www.kurbel-karlsruhe.de/index.php?targetkino=staticseite&US=3332',
+        snatchElement: 'div#content_box', // div with id 'content_box'
+        duration: 20000
+      }]
+  },
   admin: {
     enableAPI: e.ADMIN_USER && e.ADMIN_PASSWORD,
     username: e.ADMIN_USER,
