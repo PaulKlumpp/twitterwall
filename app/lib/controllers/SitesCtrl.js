@@ -16,7 +16,16 @@ module.exports = function (app) {
 
         var $ = cheerio.load(res.data)
         var snatchElementName = $scope.sites.snatchElement
-        var snatchedHtml = $(snatchElementName).toString()
+        var snatchedHtml = ''
+        if (Array.isArray(snatchElementName)) {
+          snatchElementName.forEach(function(entry) {
+            var x = $(entry).toString()
+            snatchedHtml = snatchedHtml + x
+          })
+        } else {
+          snatchedHtml = $(snatchElementName).html()
+        }
+
         $scope.sites.content = $sce.trustAsHtml(snatchedHtml);
         //$scope.sites.content = res.data
 
@@ -25,9 +34,10 @@ module.exports = function (app) {
     }
 
     function swap () {
-      sites.unshift(sites.pop())
+      $scope.sites = sites[0] // chose first in array
 
-      $scope.sites = sites[0] // chose first in array after popping and shifting...
+      // now move the first element to the end (with push). And remove the first element (with shift).
+      sites.shift(sites.push(sites[0]))
 
       getAndSaveContent()
 
