@@ -8,38 +8,41 @@
     'background-image': 'url(' + background + ')'
   }">
     <div class="schedule" ng-controller="ScheduleCtrl">
-      <div class="general">
+      <div class="lefttop">
         <h1>
           <a>{{config.hashtag}}</a>
         </h1>
       </div>
       <div class="leftmiddle" scroll-slowly speed="2">
-        <!--
-          <div class="nextup">
-            <div ng-if="nextUp">
-              <h2>{{nextUp.title}}</h2>
-              <div class="speakers">
-                <div class="speaker" ng-repeat="speaker in nextUp.speakers">
-                  <img ng-src="{{speaker.image}}">
-                  <div>{{speaker.title}}</div>
-                </div>
-              </div>
-              <h3>
-                <time relative datetime="{{eventdayify(nextUp.start_time)}}"></time>
-                in the <strong ng-style="nextUp.style.spacename">{{nextUp.space_name}}</strong>
-                <br>
-                <span>{{eventdayify(nextUp.start_time) | date:'shortTime'}}</span>
-              </h3>
-            </div>
-          </div>
-        -->
         <div class="sites" ng-controller="SitesCtrl">
           <div class="entry" ng-bind-html="sites.content"></div>
         </div>
+        <!-- <div class="nextup">
+          <div ng-if="nextUp">
+            <h2>{{nextUp.title}}</h2>
+            <div class="speakers">
+              <div class="speaker" ng-repeat="speaker in nextUp.speakers">
+                <img ng-src="{{speaker.image}}">
+                <div>{{speaker.title}}</div>
+              </div>
+            </div>
+            <h3>
+              <time relative datetime="{{eventdayify(nextUp.start_time)}}"></time>
+              in the <strong ng-style="nextUp.style.spacename">{{nextUp.space_name}}</strong>
+              <br>
+              <span>{{eventdayify(nextUp.start_time) | date:'shortTime'}}</span>
+            </h3>
+          </div>
+        </div> -->
       </div>
-      <div class="sponsor" ng-controller="SponsorCtrl">
+      <div class="leftbottom" ng-controller="SponsorCtrl">
+        <div class="sponsor">
+          <img ng-src="{{sponsor.image}}">
+        </div>
+      </div>
+      <!-- <div class="leftbottom" ng-controller="SponsorCtrl">
         <img ng-src="{{sponsor.image}}">
-      </div>
+      </div> -->
     </div>
     <ul class="tweets" ng-controller="TweetCtrl">
       <img class="preloader">

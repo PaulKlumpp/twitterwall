@@ -1,0 +1,927 @@
+
+div.sites {
+
+  // original kurbel css here:
+  body {
+    background-image:url(images/body_bg.jpg);
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-color:#000000;
+    color:#ffffff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    line-height:17px;
+    margin:0;
+    padding:0;
+  }
+
+
+
+  /* START SEITEN-LAYOUT */
+
+  #aussen {
+    width:100%;
+    text-align:center;
+  }
+
+  #aussen_box {
+    width:995px;
+    margin:auto;
+    text-align:left;
+    background-image:url(images/aussen_bg.jpg); /* DEFAULT: gif */
+  }
+
+  #head_box {
+    width:995px;
+    height:195px; /* DEFAULT: 372 */
+    background-image:url(images/head_bg.jpg);
+  }
+
+  #main_box {
+    width:995px;
+    background-image:url(images/main_bg.jpg); /* DEFAULT: jpg */
+    background-position:top;
+    background-repeat:no-repeat;
+  }
+
+  #nav_box {
+    width:230px; /* DEFAULT: 230 */
+    height:465px;
+    float:left;
+  }
+
+  #content_box {
+    width:725px; /* DEFAULT: 735 */
+    float:right;
+    margin-left:15px;
+  }
+
+  #foot_box {
+    width:995px;
+    height:74px; /* DEFAULT: 90 */
+    background-image:url(images/foot_bg.jpg); /* DEFAULT: jpg */
+    text-align:left;
+  }
+
+  #foot_txt_2 {
+    position:relative;
+    top:22px; /* DEFAULT: 50 */
+    color:#7e5f37;
+    margin-left:0px;
+    text-align:center;
+  }
+
+
+  #impressum_link {font-size:10px; color:#7e5f37;}
+  #impressum_link:hover {color:#ffffff}
+
+
+
+
+
+  /* Start Hauptnavigation */
+  ul#mainnav {
+    list-style-type:none;
+    margin:100px 0px 0px 20px;
+    padding:0px;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:0px;
+    line-height:22px;
+  }
+
+  ul#mainnav .hn {
+    width:175px;
+    font-weight:bold;
+    margin-left:0px;
+    padding-left:25px;
+    margin-bottom:10px;
+    display:block;
+    color:#ffffff;
+    background-image:url(images/nav_button_bg_1.gif);
+  }
+
+  ul#mainnav .hn:hover {
+    color:#fbbd6d;
+    background-image:url(images/nav_button_bg_2.gif);
+  }
+
+  #hn_2 {
+    width:175px;
+    font-weight:bold;
+    margin-left:0px;
+    padding-left:25px;
+    margin-bottom:10px;
+    display:block;
+    color:#fbbd6d;
+    background-image:url(images/nav_button_bg_2.gif);
+  }
+
+  /* ---- */
+
+  ul#subnav {
+    list-style-type:none;
+    margin:0px;
+    margin-bottom:20px;
+    font-size:10px;
+    padding:0px;
+    line-height:18px;
+    letter-spacing:0px;
+  }
+
+  ul#subnav li .sn {
+    color:#ffffff;
+    font-weight:bold;
+  }
+
+  ul#subnav li a, ul#subnav li div {
+    width:175px;
+    margin-left:25px;
+    padding-left:0px;
+    display:block;
+    color:#fbbd6d;
+  }
+
+  ul#subnav li a:hover {
+    font-weight:bold;
+    color:#ffffff;
+  }
+  /* Ende Hauptnavigation */
+
+
+  /* Start Texte und Bilder */
+  .text {
+    width:320px;
+    float:left;
+    margin-bottom:40px;
+    border:0px solid #f00;
+  }
+
+
+  .text_breiter {width:688px; float:left; }
+
+  .fotobox { float:right; width:360px; }
+  .foto, .foto_float_l, .foto_float_r { border:1px #fbbd6d dotted; padding:4px; }
+
+  .foto_float_r {float:right; margin-left:15px}
+  .foto_float_l {float:left; margin-right:15px}
+
+  ul.text_list {
+    list-style-type:square;
+    margin-left:30px;
+    padding:0px;
+  }
+
+  ul.text_list2 {
+    list-style-type:decimal;
+    margin-left:30px;
+    padding:0px;
+  }
+
+  ul.text_list2 li, ul.text_list li {
+    margin:0px 0px 15px 0px;
+    padding:0px;
+  }
+
+  .text_normal { font-weight:normal }
+
+  /* Ende Texte und Bilder */
+
+
+  /* ENDE SEITEN-LAYOUT */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* START HEAD */
+  /* head: Die Hauptüberschrift kann Grafik oder Text sein.
+  --- Margin-top A und Margin-bottom B müssen definiert werden. */
+  #head {
+  }
+
+  /* Abstand unter der Hauptüberschrift festlegen */
+  h1 {
+    font-size:16px;
+    font-weight:bold;
+    color:#b96138;
+    padding:0px;
+    margin-top:47px;
+    margin-left:0px;
+    margin-bottom:30px;
+    letter-spacing:7px;
+    margin-right: 0px;
+    text-transform:uppercase;
+  }
+  /* ENDE HEAD */
+
+  /* abstand_links: Außenbox für den kompletten Inhalt, außer Head.
+  --- Breite C muss definiert werden. */
+  #abstand_links {
+    margin-left:0px;
+    margin-top:0px;
+    width:692px;
+  }
+
+  /* START NEWSLETTER ABONNIEREN */
+  #newsletter {
+    text-align:right;
+    margin-bottom:3px;
+    margin-top:0px;
+    padding:0px;
+    position:relative;
+  }
+  /* ENDE NEWSLETTER ABONNIEREN */
+
+
+
+  /* START HEAD-NAVI */
+  #head_navi_box_1 {
+    background-color:#6e0000;
+    border-bottom: 1px solid #fbbd6d;
+    margin:0px;
+    line-height:14px;
+    padding:7px 0px 0px 0px;
+  }
+
+  ul#minitabs_1 {list-style: none; margin: 0; padding: 4px 0px 2px 0px; font-weight: bold;}
+  *html ul#minitabs_1 {list-style: none; margin: 0; padding: 4px 0px 3px 0px; font-weight: bold;}
+  ul#minitabs_1 li {display:inline; margin: 0px;}
+  ul#minitabs_1 a {text-decoration: none; padding: 3px; border: 1px solid #fbbd6d; border-bottom:0px; color: #6e0000; background-color:#fbbd6d;}
+  ul#minitabs_1 a:hover {border-color: #ffffff; background-color:#ffffff;}
+  ul#minitabs_1 span {text-decoration: none; padding: 3px; border: 1px solid #fbbd6d; border-bottom:0px; color: #6e0000; background-color:#fbbd6d;}
+  ul#minitabs_1 span#current {border-color: #ffffff; color:#6e0000; background-color:#ffffff;}
+
+  #head_navi_box_2 {
+    margin:0px;
+    border-bottom: 1px solid #fbbd6d;
+    line-height:14px;
+    padding:7px 0px 0px 0px
+  }
+
+  ul#minitabs_2 {list-style: none; margin: 0; padding: 4px 0px 2px 0px; font-weight: bold;}
+  *html ul#minitabs_2 {list-style: none; margin: 0; padding: 4px 0px 3px 0px; font-weight: bold;}
+  ul#minitabs_2 li {display:inline; margin: 0px}
+  ul#minitabs_2 a {text-decoration: none; padding: 3px; border: 1px solid #fbbd6d; border-bottom:0px; color: #fbbd6d;}
+  ul#minitabs_2 a:hover {border-color: #ffffff; color:#ffffff;}
+  ul#minitabs_2 span {text-decoration: none; padding: 3px; border: 1px solid #fbbd6d; border-bottom:0px; color: #fbbd6d;}
+  ul#minitabs_2 span#current {border-color: #ffffff; color:#ffffff; background-color:#6e0000;}
+  /* ENDE HEAD-NAVI */
+
+
+
+
+  /* START HEAD-NAVI */
+  /* Größe der Programm-Überschrift */
+  h3, h2 {
+    font-size:14px;
+  }
+
+  h3 {
+    font-weight:bold;
+    padding:0px 0px 10px 0px;
+    border-bottom: 1px solid #fbbd6d;
+    margin:20px 0px 10px 0px;
+  }
+  /* ENDE HEAD-NAVI */
+
+
+
+
+  /* START FILM-BOX */
+  .film_box {
+    border-bottom:1px dotted #fbbd6d;
+    padding-bottom:15px;
+    margin-top:15px;
+  }
+
+  .plakat_box {
+    width:140px;
+    float:left;
+    border:0px solid #f00;
+  }
+
+  /* film_content: Bereich für Titel, Fließtext, Zeiten.
+  --- Breite (D) muss definiert werden, ergibt sich aus: #abstand_links-Breite (C) - .plakat_box-Breite (125px) - .film_daten-Breite (100px) - 20px */
+  .film_content {
+    width:426px;
+    padding-right:13px;
+    border-right:1px dotted #fbbd6d;
+    float:left;
+    div {
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .film_daten {
+    width:100px;
+    float:right;
+  }
+
+  .plakat {
+    width:120px;
+    background-color:#6e0000;
+    text-align:center;
+    border:1px solid #fbbd6d;
+    padding-bottom:3px;
+    margin-top:5px;
+    line-height:16px;
+  }
+
+  /* Filmtitel in der film_box*/
+  h2 {
+    font-weight:bold;
+    line-height:18px;
+    letter-spacing:0px;
+    text-transform:uppercase;
+    margin:0px 0px 10px 0px;
+  }
+
+  /* Tabelle Spielzeiten */
+  .film_content table {
+    margin:15px 0px 0px 0px;
+  }
+
+  th { font-size:10px; border-bottom: 1px solid #fbbd6d; }
+  td { font-size:11px; vertical-align:top; }
+
+  .film_content th {
+    text-align:center;
+    font-weight:bold;
+  }
+
+  .film_content td {
+    text-align:center;
+    vertical-align:top;
+  }
+
+  .tab_trenner {
+    border-right: 1px solid #fbbd6d;
+  }
+
+  #tab_heute {
+    background-color:#6e0000;
+  }
+  /* ENDE FILMBOX */
+
+
+  /* START FOOT */
+  #icons {
+    margin:10px 0px 30px 0px;
+  }
+
+  #foot_txt {
+    text-align:center;
+    font-size:9px;
+    margin-bottom:15px;
+  }
+  /* ENDE FOOT */
+
+
+
+
+  /*************************************************************/
+
+
+  /********** START TAGESDARSTELLUNG **********/
+  .film_content table.tagesdarstellung {
+    float:right;
+    margin:0px 0px 20px 20px;
+    width:120px;
+  }
+
+  .film_content table.tagesdarstellung td {
+    text-align:left;
+  }
+
+  .film_content table.tagesdarstellung th {
+    text-align:left;
+  }
+  /********** ENDE TAGESDARSTELLUNG **********/
+
+
+  /********** START DETAILS, RESERVIERUNG & NEWSLETTER **********/
+  .details_box, .reserv_box, .newsletter_box {
+    padding-bottom:15px;
+  }
+
+  /* Plakat-Slidebar */
+  #slidebar {
+    width:692px;
+    height:100px;
+    border-top: 1px solid #fbbd6d; /* Linkfarbe */
+    border-bottom: 1px solid #fbbd6d; /* Linkfarbe */
+    margin-bottom:20px;
+  }
+
+  #slidetable td {
+    vertical-align:middle;
+  }
+
+  .plakat_slidebar img {
+    border: 5px solid #fbbd6d; /* Linkfarbe */
+  }
+
+  .plakat_slidebar:hover img, .plakat_slidebar_a img {
+    border: 5px solid #6e0000; /* Markerfarbe */
+  }
+
+
+  /* details_content: Bereich für Titel, Fließtext, Daten, Zeiten.
+  --- Breite (E) muss definiert werden, ergibt sich aus: #abstand_links-Breite (C) - .plakat_box-Breite (125px) */
+  .details_content, .reserv_content, .newsletter_content {
+    float:right;
+    width:545px;
+  }
+
+  .plakat_big_box {
+    width:180px;
+    float:left;
+  }
+
+  .plakat_big {
+    width:160px;
+    background-color:#6e0000;
+    text-align:center;
+    border:1px solid #fbbd6d;
+    padding-bottom:3px;
+    margin-top:5px;
+    line-height:16px;
+  }
+
+  h2#details_headline, h2#reserv_headline, h2#newsletter_headline {
+    border-bottom:1px solid #fbbd6d;
+    padding-bottom:5px;
+  }
+
+  #details_tonlogo {
+    float:right;
+    position:relative;
+    bottom:3px;
+  }
+
+  #details_trailer_icon {
+    float:left; margin:2px 10px 0px 0px;
+  }
+
+  #trailer_box {
+    float:right;
+    margin:0px 0px 15px 15px;
+    border:1px solid #fbbd6d;
+    text-align:center;
+  }
+
+  .details_content table, .reserv_content table {
+    margin:20px 0px 20px 0px;
+  }
+
+  #details_prog_tab td{
+    text-align:center;
+  }
+
+  #tab_reservierung td, #tab_newsletter td {
+    vertical-align:middle;
+  }
+
+  #abholnummer {
+    border:1px solid #a0b3dc;
+    display:inline;
+    padding:5px;
+  }
+
+  #icon_newsletter {
+    margin-left:20px;
+  }
+
+  /* Start Bewertung */
+  .bewerungs_kommentar {
+    margin:20px 0px 20px 0px;
+  }
+
+  /********** ENDE DETAILS, RESERVIERUNG & NEWSLETTER **********/
+
+
+  /********** START NEWS-SEITE **********/
+
+  .news_box, .news_box_archiv {
+    padding-bottom:15px;
+  }
+
+  /* news_box: Bereich für komplette News
+  --- Breite (F) muss definiert werden, ergibt sich aus: #abstand_links-Breite (C) - .heute_box (210px) */
+  .news_box {
+    width:460px;
+    float:left;
+  }
+
+  .news_content {
+    margin:0px 15px 40px 0px;
+  }
+
+  /* Gewinnspiel */
+  h2#gewinnspiel_headline {
+    border-bottom:1px solid #fbbd6d;
+    background-color:#6e0000;
+    padding:10px 80px 5px 5px;
+    letter-spacing:0px;
+    vertical-align:bottom;
+    background-image:url(icon_fragezeichen.gif);
+    background-position:right center;
+    background-repeat:no-repeat;
+  }
+
+  #gewinn {
+    font-weight:bold;
+    padding:5px;
+    margin:10px 0px 10px 0px;
+    border-top:1px solid #fbbd6d;
+    border-bottom:1px solid #fbbd6d;
+  }
+
+  table#antworten {
+    margin:10px 0px 20px 0px;
+  }
+
+  #antworten td{
+    padding:4px;
+    vertical-align:middle
+  }
+
+  #antworten td.bg_1 {
+    background-color:#fbbd6d;
+  }
+
+  #antworten td.bg_2 {
+    background-color:#6e0000;
+  }
+
+  /* Event */
+  h2#event_headline {
+    border-bottom:1px solid #fbbd6d;
+    background-color:#6e0000;
+    padding:10px 5px 5px 5px;
+    letter-spacing:0px;
+    vertical-align:bottom;
+  }
+
+  .event_gfx, .event_gfx_bild {
+    background-color:#6e0000;
+    border:1px solid #fbbd6d;
+    margin:5px 14px 12px 0px;
+    float:left;
+  }
+
+  .event_gfx {
+    width:90px;
+  }
+
+  /* Heute im Programm */
+  #news_rechts {
+    float:right;
+  }
+
+  #heute_box {
+    width:210px;
+    background-color:#6e0000;
+    margin-bottom:15px;
+    padding-bottom:15px;
+  }
+
+  #heute_head {
+    margin:0px;
+    padding:0px;
+    width:208px;
+  }
+
+  #heute_hl {
+    background-color:#fbbd6d;
+    padding:5px 0px 5px 10px;
+    width:198px;
+    border:1px solid #fbbd6d;
+    margin:0px;
+    color:#6e0000;
+    float:left;
+  }
+
+  #zum_programm {
+    background-color:#6e0000;
+    padding:5px 10px 5px 10px;
+    float:right;
+  }
+
+  .heute_film {
+    margin:0px 10px 0px 10px;
+    border-bottom:1px solid #fbbd6d;
+  }
+
+  .heute_plakat {
+    width:60px;
+    border:1px solid #fbbd6d;
+    margin-top:13px;
+    margin-bottom:10px;
+    float:left;
+  }
+
+  .heute_txt {
+    width:120px;
+    float:right;
+    margin-top:10px;
+    margin-bottom:10px;
+  }
+
+  #heute_nospace {
+    margin-bottom:0px;
+  }
+
+  #heute_noborder {
+    border:0px;
+    padding-bottom:0px;
+    margin-bottom:0px;
+  }
+
+  /* News-Archiv */
+  .news_archiv_box {
+  }
+
+  /********** ENDE NEWS-SEITE **********/
+
+
+  /********** START MEMORY **********/
+  #memory_zum_programm {
+    float:right;
+  }
+  /********** START MEMORY **********/
+
+
+  /********** START FILM-ARCHIV **********/
+  #tab_01_filmarchiv, #tab_02_filmarchiv {
+    margin:15px 0px 15px 0px;
+  }
+
+  #tab_01_filmarchiv td {
+    background-color:#6e0000;
+    padding:5px;
+    font-weight:bold;
+  }
+
+  #tab_01_filmarchiv td:hover {
+    background-color:#e3e9ef;
+    padding:5px;
+    font-weight:bold;
+  }
+
+  #tab_02_filmarchiv .head {
+    background-color:#fbbd6d;
+    font-weight:bold;
+    color:#6e0000;
+    text-align:left;
+    padding:5px;
+  }
+
+  #tab_02_filmarchiv td {
+    padding:5px;
+  }
+
+  #tab_02_filmarchiv td.bg {
+    background-color:#6e0000;
+  }
+
+  #filmarchiv_link_oben {
+    float:right;
+    margin-top:8px;
+  }
+  /********** ENDE FILM-ARCHIV **********/
+
+
+  /********** START GÄSTEBUCH **********/
+  #gb_box {
+    margin-left:120px;
+  }
+
+  .gb_cont {
+    width:420px;
+  }
+
+  .gtrenner, .geintrag, .gnummer, .gdaten {
+    width:420px;
+    margin-top:15px;
+  }
+
+  .gb_cont {
+    margin-bottom:20px;
+    line-height:16px;
+  }
+
+  #geingabe_01 {
+    float:left;
+  }
+
+  #geingabe_02 {
+    float:right;
+  }
+
+  .gtrenner {
+    border-bottom:1px solid #fbbd6d;
+    height:1px;
+    margin-top:10px;
+  }
+
+  .geintrag {
+    margin-top:25px;
+  }
+
+  .gnummer {
+    font-size:14px;
+    font-weight:bold;
+    color:#6e0000;
+    padding:5px;
+    background-color:#fbbd6d;
+  }
+
+  .gdaten {
+    margin:0px;
+    background-color:#6e0000;
+    padding:5px;
+  }
+
+  .gdaten_01 {
+    padding:5px 5px 5px 35px;
+    float:left;
+    font-weight:bold;
+  }
+
+  .gdaten_02 {
+    padding:5px 5px 5px 20px;
+    float:left;
+  }
+
+  .gtext {
+    padding:15px 5px 5px 35px;
+  }
+
+  .gkommentar {
+    padding:15px 5px 5px 35px;
+    font-style:italic;
+  }
+  /********** ENDE GÄSTEBUCH **********/
+
+
+
+
+  /********** START SHOP **********/
+  #warenkorb {
+    margin:0px;
+    padding:0px;
+    float:right;
+    font-size:11px;
+    font-weight:normal
+  }
+
+  .artikel_box, .warenkorb_box {
+    border-bottom:2px dotted #fbbd6d; /*** LINKFARBE ***/
+    padding-bottom:15px;
+    margin-top:15px;
+  }
+
+  .artikel_motiv_box {
+    width:140px;
+    float:left;
+  }
+
+  .artikel_motiv {
+    width:120px;
+    background-color:#6e0000; /*** MARKERFARBE ***/
+    border:1px solid #fbbd6d; /*** LINKFARBE ***/
+    padding-bottom:3px;
+    margin-top:5px;
+    line-height:16px;
+  }
+
+  .artikel_motiv_klein {
+    border:1px solid #fbbd6d; /*** LINKFARBE ***/
+  }
+
+  .artikel_beschreibung {
+    width:530px;
+    padding-right:13px;
+    float:left;
+  }
+
+  .artikel_preis {
+    font-size:14px;
+    font-weight:bold;
+  }
+
+  .artikel_versand {
+    font-size:9px;
+  }
+
+  #warenkorb_table td {
+    background-color:#6e0000; /*** MARKERFARBE ***/
+  }
+
+  .warenkorb_preis {
+    font-weight:bold;
+    text-align:right;
+  }
+
+  #rechnungsadresse {
+    float:left;
+    width:320px;
+  }
+
+  #lieferadresse {
+    float:right;
+    width:320px;
+  }
+
+  .warenkorb_small_text {
+    font-size:10px;
+    font-weight:normal
+  }
+
+  /********** ENDE SHOP **********/
+
+
+
+
+
+
+  /*************************************************************/
+
+  /* SONSTIGES CSS */
+  a:link {color:#fbbd6d; text-decoration:none;}
+  a:visited {color:#fbbd6d; text-decoration:none;}
+  a:hover {color:#ffffff; text-decoration:none;}
+  a:active {color:#fbbd6d; text-decoration:none;}
+
+  /* Allgemeine Trennlinie */
+  .trenner {height:1px; border-top:1px solid #fbbd6d}
+  .trenner_dotted {height:1px; border-top:1px dotted #fbbd6d; line-height:1px;}
+
+  /* Allgemeine Box mit 15px Margin-Top */
+  .allg_box {
+    margin-top: 0px;
+  }
+
+  /* Allgemeiner Rahmen z.B. für Bilder, etc */
+  .allg_border {
+    border: 1px solid #fbbd6d
+  }
+
+  /* Formular */
+  form {
+    display:inline;
+  }
+
+  input {
+    font-size:12px;
+  }
+
+  /* Befehl,der dauer sorgt, dass Boxen-rahmen mit Float-Inhalten und variablen Höhen bis zur unteren Inhaltskante laufen.*/
+  .clear {clear:both; height:0px; line-height:0px; margin:0px; padding:0px; font-size:0px;}
+  /* Hack: alle ausser IE brauchen font-size>0 */
+  html>body .clear {font-size:1px;}
+
+  /* vertikales Banner */
+  .vertical_banner_box {
+    margin:60px 0px 0px 16px;
+    width:210px;
+    text-align:center;
+  }
+
+  .vertical_banner {
+    border: 1px solid #fbbd6d;
+  }
+
+}
+

@@ -5,7 +5,7 @@ var cheerio = require('cheerio')
 module.exports = function (app) {
   app.controller('SitesCtrl', function ($scope, $http, $timeout, $sce) {
     //var sites = $scope.config.sites.sort(Math.random.bind(Math))
-    var sites = $scope.config.sites.sites
+    var sites = $scope.config.facts.sites
 
 
     function getAndSaveContent () {

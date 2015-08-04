@@ -1,4 +1,4 @@
-'use strict'
+﻿'use strict'
 
 /*jshint camelcase: false */
 
@@ -31,24 +31,51 @@ module.exports = {
       'Lounge': '#c35a18'
     }
   },
-  cineprog: {
-      sites: [{
-        url: 'http://www.kurbel-karlsruhe.de/index.php?knr=197&show=week&week=0&firstday=do',
-        snatchElement: 'div.film_box', // class "film_box"
-        duration: 20000
-      }, {
-        url: 'http://www.kurbel-karlsruhe.de/index.php?knr=197&show=week&week=1&firstday=do',
-        snatchElement: 'div.film_box', // class "film_box"
-        duration: 20000
-      }, {
-        url: 'http://www.kurbel-karlsruhe.de/index.php?targetkino=staticseite&US=3338',
-        snatchElement: 'div#content_box', // div with id 'content_box'
-        duration: 20000
-      }, {
+  sites: {
+		  // das hilft beim erstellen der snatchElemente www.w3schools.com/jquery/trysel.asp
+      sites: [
+      {
+        // Sonderveranstaltungen > Sneak Preview
         url: 'http://www.kurbel-karlsruhe.de/index.php?targetkino=staticseite&US=3332',
         snatchElement: 'div#content_box', // div with id 'content_box'
         duration: 20000
-      }]
+      },
+      {
+        // Sonderveranstaltungen > Tatort in der Kurbel
+        url: 'http://www.kurbel-karlsruhe.de/index.php?targetkino=staticseite&US=3338',
+        snatchElement: 'div#content_box', // div with id 'content_box'
+        duration: 20000
+      },
+      {
+        // Sonderprogramm "Tatort"
+				url: 'http://kurbel-karlsruhe.de/index.php?show=sond_Sonderprogramm&week=0&sonderr=1',
+				snatchElement: ['h1', 'div#abstand_links > strong', 'div#abstand_links > div > a > img.foto', 'div#abstand_links > p', 'div.film_box'],
+				//snatchElement: 'div#abstand_links p, div#abstand_links div:lt(2), div#abstand_links p, div.film_box',   :lt(2) geht nicht.
+				duration: 65000 // 65 Sekunden
+			},
+      {
+				// Wochenprogramm - diese Woche
+        url: 'http://www.kurbel-karlsruhe.de/index.php?knr=197&show=week&week=0&firstday=do',
+        snatchElement: ['h1', 'h3', 'h3 ~ div.film_box'], // zuerst h3 .. dann alle div.film_box, welche hierarchisch parallel nach h3 folgen.
+        duration: 45000
+      },
+      {
+        // Wochenprogramm - nächste Woche
+        url: 'http://www.kurbel-karlsruhe.de/index.php?knr=197&show=week&week=1&firstday=do',
+        snatchElement: ['h1', 'h3', 'h3 ~ div.film_box'], // class "film_box"
+        duration: 45000
+      },
+      {
+				// Sonderveranstaltungen > Indoor Open Air
+				url: 'http://kurbel-karlsruhe.de/index.php?show=week&targetkino=staticseite&US=3611',
+				snatchElement: ['h1', 'div#abstand_links div:nth-child(1)', 'div#abstand_links div:nth-child(2)'], // nur die ersten zwei Divs. - also nur der erste Block mit Bild.
+				duration: 20000
+      }
+
+			]
+  },
+  facts: {
+
   },
   admin: {
     enableAPI: e.ADMIN_USER && e.ADMIN_PASSWORD,
