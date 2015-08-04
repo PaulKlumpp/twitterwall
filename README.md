@@ -8,8 +8,8 @@
 
 ## Configure Twitterwall
 
-    Copy the env.sample to a file called '.env'. It's a hidden file, thus the dot in the name.
-    It looks like this:
+Copy the env.sample to a file called '.env'. It's a hidden file, thus the dot in the name.
+It looks like this:
 
 ```
 {
