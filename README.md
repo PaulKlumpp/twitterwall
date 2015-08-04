@@ -11,28 +11,28 @@
     Copy the env.sample to a file called '.env'. It's a hidden file, thus the dot in the name.
     It looks like this:
 
-    ```
-    {
-      "title": "My Twitterwall",
-      "debug": "http,worker,twitterwall",
-      "port": "8000",
-      "access": {
-        "token": "<your twitter access token>",
-        "token_secret": "<your twitter token secret>"
-      },
-      "consumer": {
-        "key": "<your twitter consumer key>",
-        "secret": "<your twitter consumer secret>"
-      },
-      "lanyrd": {
-        "year": "2015",
-        "gid": "concat"
-      },
-      "hashtag": "#concat",
-      "hashtags": "#concat,#anotherhashtag,#anotherone"
-    }
+```
+{
+  "title": "My Twitterwall",
+  "debug": "http,worker,twitterwall",
+  "port": "8000",
+  "access": {
+    "token": "<your twitter access token>",
+    "token_secret": "<your twitter token secret>"
+  },
+  "consumer": {
+    "key": "<your twitter consumer key>",
+    "secret": "<your twitter consumer secret>"
+  },
+  "lanyrd": {
+    "year": "2015",
+    "gid": "concat"
+  },
+  "hashtag": "#concat",
+  "hashtags": "#concat,#anotherhashtag,#anotherone"
+}
 
-    ```
+```
 
 ## Run Twitterwall
 
