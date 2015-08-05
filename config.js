@@ -32,8 +32,8 @@ module.exports = {
     }
   },
   sites: {
-		  // das hilft beim erstellen der snatchElemente www.w3schools.com/jquery/trysel.asp
-      sites: [
+		  // das hilft beim Erstellen der snatchElemente: www.w3schools.com/jquery/trysel.asp
+      siteList: [
       {
         // Sonderveranstaltungen > Sneak Preview
         url: 'http://www.kurbel-karlsruhe.de/index.php?targetkino=staticseite&US=3332',
@@ -75,6 +75,17 @@ module.exports = {
 			]
   },
   facts: {
+    duration: 5000,
+    factList: [
+      '**Markdown Text _works_ lets** see :) ',
+      'aaaa',
+      'bbbb ;-)',
+      'ccc 8-)',
+      'dd',
+      'e',
+
+      'r'
+      ]
 
   },
   admin: {

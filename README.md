@@ -34,6 +34,10 @@ It looks like this:
 
 ```
 
+Also, edit config.js for your flavor. The config.js sometimes refers to e.VARNAME. Those variables are taken from the
+'.env' file.
+
+
 ## Run Twitterwall
 
     $ npm install && npm start
